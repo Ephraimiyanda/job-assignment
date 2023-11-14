@@ -168,8 +168,8 @@ useEffect(() => {
         <div className="p-3 flex flex-col bg-gray-200 min-h-[200px] sm:w-full w-full">
           <h3 className="text-xl font-semibold">Homeworks</h3>
           <div className="flex flex-wrap justify-between gap-3 ">
-          {data.homework.map((homework)=>(
-            <p className="text-lg font-medium">{homework}</p>
+          {data.homework.map((homework,index)=>(
+            <p className="text-lg font-medium" key={index}>{homework}</p>
           ))}  
           </div>
         </div>
